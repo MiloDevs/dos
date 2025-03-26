@@ -1,17 +1,19 @@
 package com.milodevs.tcp.server;
+
 import java.io.*;
 import java.net.*;
 
-public class Main {
+public class TCPServer {
     private static ServerSocket serverSock;
-    private  static final int PORT = 5154;
+    private static final int PORT = 5154;
+
     public static void main(String[] args) {
         System.out.println("Opening server on port:" + PORT);
 
         try {
             serverSock = new ServerSocket(PORT);
             System.out.println("Server opened on port:" + PORT);
-            do { 
+            do {
                 runServer();
             } while (true);
         } catch (IOException e) {
@@ -29,7 +31,7 @@ public class Main {
 
     }
 
-    private  static void runServer() {
+    private static void runServer() {
         Socket link = null;
         try {
             link = serverSock.accept();

@@ -1,9 +1,9 @@
-package com.milodevs.udp.client;
+package com.milodevs.udp.server;
 
 import java.io.IOException;
 import java.net.*;
 
-public class Main {
+public class UDPServer {
     private static DatagramSocket dgramSocket;
     private static DatagramPacket inPacket, outPacket;
     private static final int PORT = 1066;

@@ -2,7 +2,7 @@ package com.milodevs.tcp.client;
 import java.io.*;
 import java.net.*;
 
-public class Main {
+public class TCPClient {
     private static InetAddress host;
     private  static final int PORT = 5154;
     public static void main(String[] args) {

@@ -4,10 +4,11 @@ import java.io.IOException;
 import java.net.*;
 import java.util.Scanner;
 
-public class Main {
+public class UDPClient {
     private static DatagramSocket dgramSocket;
     private static final int PORT = 1066;
     private static byte[] buffer = new byte[256];
+    private static Scanner scanner;
 
     public static void main(String[] args) {
         System.err.println("Starting Client");
@@ -20,7 +21,7 @@ public class Main {
         do {
             try {
                 buffer = new byte[256];
-                Scanner scanner = new Scanner(System.in);
+                scanner = new Scanner(System.in);
                 System.out.print("Enter message: ");
                 String message = scanner.nextLine();
                 if (message.equals("q")) {
