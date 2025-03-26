@@ -1,5 +1,1 @@
-## To run:
-
-```shell
- Java main.java
-```
+## Basic TCP, UDP, RMI Java Server Implementation
